@@ -12,8 +12,8 @@ public class Hello {
 //        Nissan.year = 2021;
 //        Nissan.color = "Blue";
 
-        System.out.println("Toyota: " + Toyota.make + " " + Toyota.price + " " + Toyota.year + " " + Toyota.color);
-        System.out.println("Nissan: " + Nissan.make + " " + Nissan.price + " " + Nissan.year + " " + Nissan.color);
+        System.out.println("Toyota: " + Toyota.getMake() + " " + Toyota.getPrice() + " " + Toyota.getYear() + " " + Toyota.getColor());
+        System.out.println("Nissan: " + Nissan.getMake() + " " + Nissan.getPrice() + " " + Nissan.getYear() + " " + Nissan.getColor());
 
     }
 }
