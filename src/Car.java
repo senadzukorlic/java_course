@@ -11,32 +11,43 @@
         this.color = color;
     }
 
-    public String getMake(){
-        return make;
+    public Car(Car source){
+        this.make = source.make;
+        this.price = source.price;
+        this.year = source.year;
+        this.color = source.color;
     }
-    public void setMake(String make){
-        this.make = make;
-    }
-    public double getPrice(){
-        return price;
-    }
-    public void setPrice(double price){
-        this.price = price;
-    }
-    public int getYear(){
-        return year;
-    }
-    public void setYear(int year){
-        this.year = year;
-    }
-    public String getColor(){
-        return color;
-    }
-    public void setColor(String color){
-        this.color = color;
-    }
+        public void setColor(String color) {
+            this.color = color;
+        }
 
+        public void setYear(int year) {
+            this.year = year;
+        }
 
-}
+        public void setPrice(double price) {
+            this.price = price;
+        }
+
+        public void setMake(String make) {
+            this.make = make;
+        }
+
+        public double getPrice() {
+            return price;
+        }
+
+        public String getMake() {
+            return make;
+        }
+
+        public int getYear() {
+            return year;
+        }
+
+        public String getColor() {
+            return color;
+        }
+    }
 
 
