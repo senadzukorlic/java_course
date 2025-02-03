@@ -1,4 +1,6 @@
-    public class Car {
+import java.util.Arrays;
+
+public class Car {
         private  String make;
         private double price;
         private int year;
@@ -10,7 +12,7 @@
             this.price = price;
             this.year = year;
             this.color = color;
-            this.parts = parts;
+            this.parts = Arrays.copyOf(parts, parts.length);
         }
 
         public Car(Car source){
@@ -18,7 +20,7 @@
         this.price = source.price;
         this.year = source.year;
         this.color = source.color;
-        this.parts = source.parts;
+        this.parts = Arrays.copyOf(source.parts, source.parts.length);
 
     }
         public void setColor(String color) {
@@ -63,6 +65,7 @@
 
         public void drive(){
         System.out.println("You bought a " + make + " " + year + " " + color + " for " + price + " dollars. Enjoy your ride!");
+        System.out.println("Here are the spare parts:" + parts[0] + ", " + parts[1] + ", " + parts[2]);
         }
     }
 
