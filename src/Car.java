@@ -67,6 +67,11 @@ public class Car {
         System.out.println("You bought a " + make + " " + year + " " + color + " for " + price + " dollars. Enjoy your ride!");
         System.out.println("Here are the spare parts:" + parts[0] + ", " + parts[1] + ", " + parts[2]);
         }
+    @Override
+    public String toString() {
+        return make + " (" + year + ") - " + color + " - $" + price;
     }
+
+}
 
 
