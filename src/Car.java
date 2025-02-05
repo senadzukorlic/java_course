@@ -8,6 +8,7 @@ public class Car {
         private String[] parts;
 
         public Car(String make, double price, int year, String color, String[] parts) {
+            //Konstruktor,koristi se za kreiranje objeakta
             this.make = make;
             this.price = price;
             this.year = year;
@@ -39,6 +40,11 @@ public class Car {
             this.make = make;
         }
 
+        public void setParts(String[] parts) {
+        this.parts = Arrays.copyOf(parts, parts.length);
+    }
+
+
         public double getPrice() {
             return price;
         }
@@ -59,18 +65,16 @@ public class Car {
             return Arrays.copyOf(this.parts, this.parts.length);
         }
 
-        public void setParts(String[] parts) {
-            this.parts = Arrays.copyOf(parts, parts.length);
-        }
+
+    public String toString() {
+        return "Marka: " + make + ", Cena: " + price + ", Godina: " + year + ", Boja: " + color + ", Delovi: " + Arrays.toString(parts);
+    }
+
 
         public void drive(){
         System.out.println("You bought a " + make + " " + year + " " + color + " for " + price + " dollars. Enjoy your ride!");
-        System.out.println("Here are the spare parts:" + parts[0] + ", " + parts[1] + ", " + parts[2]);
         }
-    @Override
-    public String toString() {
-        return make + " (" + year + ") - " + color + " - $" + price;
-    }
+
 
 }
 
