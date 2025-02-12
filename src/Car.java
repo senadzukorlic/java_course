@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class Car {
+
         private  String make;
         private double price;
         private int year;
