@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class City {
 
     private String name;
@@ -31,4 +33,18 @@ public class City {
     }
 
 
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof City)){
+            return false;
+        }
+        City city = (City) o;
+        return population == city.population && Objects.equals(name, city.name);
+    }
+
+
+    public int hashCode() {
+        return Objects.hash(name, population);
+    }
 }
