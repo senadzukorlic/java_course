@@ -32,8 +32,29 @@ public class Contact {
         return period.getYears();
     }
 
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public String getBirthDate() {
+        return birthDate;
+    }
     public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
+    }
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void printContact (){
