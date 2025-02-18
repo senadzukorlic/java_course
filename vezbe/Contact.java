@@ -2,8 +2,8 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 
-
 public class Contact {
+
     private String name;
     private String phoneNumber;
     private String birthDate;
@@ -20,7 +20,7 @@ public class Contact {
         this.name = source.name;
         this.phoneNumber = source.phoneNumber;
         this.birthDate = source.birthDate;
-    this.age = source.toAge(source.birthDate);
+        this.age = source.toAge(source.birthDate);
     }
 
     public int toAge(String BirthDate){
@@ -61,4 +61,11 @@ public class Contact {
         System.out.println("Name: " + this.name + "\nPhone number: " + this.phoneNumber + "\nBirth date: " + this.birthDate + "\nAge: " + this.age);
         System.out.print("\n");
     }
+    public String toString() {
+        return "Name: " + this.name + "\n" +
+                "Phone number: " + this.phoneNumber + "\n" +
+                "Birth Date: " + this.birthDate + "\n" +
+                "Age: " + this.age + " year old\n";
+    }
 }
+
