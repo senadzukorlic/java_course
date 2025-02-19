@@ -1,4 +1,5 @@
-import java.util.LinkedList;
+package Lists;
+
 import java.util.List;
 import java.util.ArrayList;
 public class LectionArrayList {

@@ -1,3 +1,5 @@
+package Objects;
+
 public class ObjektiObjasnjenje {
 
         public static void main(String[] args) {
@@ -20,22 +22,22 @@ public class ObjektiObjasnjenje {
             System.out.println("Modified car make: " + carAtIndex0.getMake());
 
             // Verify that the car in the dealership is not affected
-            System.out.println("Dealership car make: " + dealership.getCar(0).getMake());
+            System.out.println("Objects.Dealership car make: " + dealership.getCar(0).getMake());
 
-            // Create a new Car object
+            // Create a new Objects.Car object
             Car newCar = new Car("BMW", 10000, 2018, "silver", new String[] {"tires", "filter", "transmission"});
 
             // Set the car at index 1 in the dealership to a deep copy of the newCar
             dealership.setCar(1, newCar);
 
             // Verify that the car at index 1 in the dealership has been updated
-            System.out.println("Dealership car make at index 1: " + dealership.getCar(1).getMake());
+            System.out.println("Objects.Dealership car make at index 1: " + dealership.getCar(1).getMake());
 
             // Modify the newCar object
             newCar.setMake("Audi");
 
             // Verify that the car in the dealership is not affected
-            System.out.println("Dealership car make at index 1 after modifying newCar: " + dealership.getCar(1).getMake());
+            System.out.println("Objects.Dealership car make at index 1 after modifying newCar: " + dealership.getCar(1).getMake());
         }
 
 

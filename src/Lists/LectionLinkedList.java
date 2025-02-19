@@ -1,3 +1,5 @@
+package Lists;
+
 import java.util.List;
 import java.util.LinkedList;
 public class LectionLinkedList {

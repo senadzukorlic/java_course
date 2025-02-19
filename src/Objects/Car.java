@@ -1,3 +1,5 @@
+package Objects;
+
 import java.util.Arrays;
 
 public class Car {
@@ -9,7 +11,7 @@ public class Car {
         private String[] parts;
 
         public Car(String make, double price, int year, String color, String[] parts) {
-            //Konstruktor,koristi se za kreiranje objeakta
+            //Konstruktor,koristi se za kreiranje   objeakta
             this.make = make;
             this.price = price;
             this.year = year;

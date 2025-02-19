@@ -1,23 +1,11 @@
-import java.util.ArrayList;
+import vezbe.vezba2.Book;
 
 public class Main {
     public static void main(String[] args) {
 
-        City paris = new City("Paris", 2161000);
-        City copy = paris;
+    Book Book1 = new Book("Kitabu-Tevhid","Muhammed ibn Abdulvehhab",5.0, 1000);
+    Book copyBook1 =new Book(Book1);
+    System.out.println(copyBook1.Print());
 
-        System.out.println(paris.equals(copy));
-        copy.setPopulation(2059003);
-        paris.setPopulation(3129003);
-
-        ArrayList<City> cities = new ArrayList<>();
-        cities.add(new City("Paris", 2161000));
-        cities.add(new City("Florence", 382258));
-        cities.add(new City("Venice", 261905));
-        cities.add(new City("Versailles", 85771));
-        cities.add(new City("London", 8982000));
-
-        System.out.println(cities.contains(paris));
     }
-
 }
