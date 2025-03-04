@@ -1,4 +1,4 @@
-package StaticAndFinal;
+package StaticAndFinal.Static;
 
 public class User {
 

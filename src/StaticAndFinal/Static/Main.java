@@ -1,6 +1,4 @@
-package StaticAndFinal;
-
-import  StaticAndFinal.User;
+package StaticAndFinal.Static;
 
 public class Main {
     public static void main(String[] args) {
