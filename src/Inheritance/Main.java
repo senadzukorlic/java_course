@@ -7,22 +7,15 @@ import Inheritance.product.Shirt;
 public class Main {
     public static void main(String[] args) {
 
-        Shirt shirt = new Shirt();
+        Shirt shirt = new Shirt(10.00, "blue", "Nike", Shirt.Size.LARGE);
 
-        shirt.setSize(Shirt.Size.MEDIUM);
-        shirt.setBrand("Nike");
-        shirt.setColor("Red");
-        shirt.setPrice(25.99);
+
         shirt.fold();
         productStore(shirt);
 
-        Pants pants = new Pants();
+        Pants pants = new Pants(49.99, "black", "Levi's", 32, 34);
 
-        pants.setWaist(32);
-        pants.setLength(34);
-        pants.setBrand("Levi's");
-        pants.setColor("Blue");
-        pants.setPrice(49.99);
+
         pants.fold();
         productStore(pants);
     }
