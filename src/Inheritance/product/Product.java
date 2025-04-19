@@ -36,7 +36,7 @@ public class Product {
     }
 
     public void fold() {
-        System.out.println("\nFolding my" + this.getBrand() + "" + this.getClass().getSimpleName());
+        System.out.println("\n Old fold method");
     }
 
 }

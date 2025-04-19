@@ -14,7 +14,7 @@ public class Main {
         productStore(shirt);
 
         Pants pants = new Pants(49.99, "black", "Levi's", 32, 34);
-
+        pants.setWaist(123 );
 
         pants.fold();
         productStore(pants);

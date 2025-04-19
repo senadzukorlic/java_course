@@ -20,4 +20,9 @@ public class Shirt extends Product {
     public void setSize(Size size) {
         this.size = size;
     }
+
+    @Override
+    public void fold() {
+        System.out.println("\nFolding my " + this.getBrand() + " " + this.getClass().getSimpleName());
+    }
 }

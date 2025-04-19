@@ -27,6 +27,11 @@ public class Pants extends Product {
         this.length = length;
     }
 
+@Override
+    public void fold() {
+        System.out.println("\nFolding my " + this.getBrand() + " " + this.getClass().getSimpleName());
+    }
+
 
 
 
