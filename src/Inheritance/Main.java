@@ -21,5 +21,6 @@ public class Main {
     }
 public static void productStore(Product product){
     System.out.println("Thank you for purchasing " + product.getBrand() + ". " + product.getClass().getSimpleName().toLowerCase() + " " +  "Your total is $" + product.getPrice());
+    product.wear();
 }
 }

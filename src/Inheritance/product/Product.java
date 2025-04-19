@@ -1,6 +1,6 @@
 package Inheritance.product;
 
-public class Product {
+public abstract class Product {
     private double price;
     private String color;
     private String brand;
@@ -39,4 +39,5 @@ public class Product {
         System.out.println("\n Old fold method");
     }
 
+    public abstract void  wear();
 }

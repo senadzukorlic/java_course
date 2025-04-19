@@ -26,4 +26,9 @@ public class Shirt extends Product {
         super.fold();
         System.out.println("\nFolding my " + this.getBrand() + " " + this.getClass().getSimpleName());
     }
+    @Override
+    public void wear() {
+        System.out.println("Wearing my " + this.getBrand() + " " + this.getClass().getSimpleName());
+    }
+
 }
