@@ -29,6 +29,7 @@ public class Pants extends Product {
 
 @Override
     public void fold() {
+        super.fold();
         System.out.println("\nFolding my " + this.getBrand() + " " + this.getClass().getSimpleName());
     }
 
